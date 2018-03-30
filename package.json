@@ -1,0 +1,22 @@
+{
+  "name": "0xproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development nodemon server.js",
+    "deploy": "NODE_ENV=production nodemon server.js",
+    "net": "testrpc --networkId 50 -p 8545 --db ./testrpc/0x_testrpc_snapshot/ -m \"concert load couple harbor equip island argue ramp clarify fence smart topic\"",
+    "snapshot": "rm -rf testrpc/0x_testrpc_snapshot && unzip ./testrpc/35053f9.zip -d ./testrpc/0x_testrpc_snapshot"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "0x.js": "^0.20.0",
+    "bignumber.js": "^4.1.0",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.1",
+    "web3": "^1.0.0-beta.22"
+  }
+}
